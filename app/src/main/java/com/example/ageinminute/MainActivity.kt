@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             tvSelectedDateInMinutes.text = days.toString()
 
         },year,month,day)
+        //limiting selection date option so that user can't select future date
         dpd.datePicker.maxDate = Date().time-86400000
         dpd.show()
     }
